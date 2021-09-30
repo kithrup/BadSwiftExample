@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ProtocolTest-Bridging-Header.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {

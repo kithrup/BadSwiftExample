@@ -8,7 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		86DBBCBE270658D00046A223 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DBBCBD270658D00046A223 /* main.m */; };
+		86DBBCCE270659290046A223 /* ProtocolDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DBBCCD270659290046A223 /* ProtocolDefinition.swift */; };
+		86DBBCD1270659EE0046A223 /* ProxyController.h in Headers */ = {isa = PBXBuildFile; fileRef = 86DBBCCF270659EE0046A223 /* ProxyController.h */; };
+		86DBBCD2270659EE0046A223 /* ProxyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DBBCD0270659EE0046A223 /* ProxyController.m */; };
+		86DBBCD627065A610046A223 /* libProtocolTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86DBBCC8270658F90046A223 /* libProtocolTest.a */; };
+		86DBBCD927065B350046A223 /* ProtoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DBBCD827065B350046A223 /* ProtoTest.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		86DBBCD327065A5A0046A223 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86DBBCB2270658D00046A223 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86DBBCC7270658F90046A223;
+			remoteInfo = ProtocolTest;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		86DBBCB8270658D00046A223 /* CopyFiles */ = {
@@ -25,10 +40,25 @@
 /* Begin PBXFileReference section */
 		86DBBCBA270658D00046A223 /* LibraryTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LibraryTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86DBBCBD270658D00046A223 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		86DBBCC8270658F90046A223 /* libProtocolTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libProtocolTest.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		86DBBCCC270659290046A223 /* ProtocolTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ProtocolTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		86DBBCCD270659290046A223 /* ProtocolDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolDefinition.swift; sourceTree = "<group>"; };
+		86DBBCCF270659EE0046A223 /* ProxyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProxyController.h; sourceTree = "<group>"; };
+		86DBBCD0270659EE0046A223 /* ProxyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProxyController.m; sourceTree = "<group>"; };
+		86DBBCD727065B350046A223 /* LibraryTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LibraryTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		86DBBCD827065B350046A223 /* ProtoTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtoTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		86DBBCB7270658D00046A223 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86DBBCD627065A610046A223 /* libProtocolTest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86DBBCC6270658F90046A223 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,8 +71,13 @@
 		86DBBCB1270658D00046A223 = {
 			isa = PBXGroup;
 			children = (
+				86DBBCCD270659290046A223 /* ProtocolDefinition.swift */,
+				86DBBCCF270659EE0046A223 /* ProxyController.h */,
+				86DBBCD0270659EE0046A223 /* ProxyController.m */,
 				86DBBCBC270658D00046A223 /* LibraryTest */,
 				86DBBCBB270658D00046A223 /* Products */,
+				86DBBCCC270659290046A223 /* ProtocolTest-Bridging-Header.h */,
+				86DBBCD527065A610046A223 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				86DBBCBA270658D00046A223 /* LibraryTest */,
+				86DBBCC8270658F90046A223 /* libProtocolTest.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,11 +94,31 @@
 			isa = PBXGroup;
 			children = (
 				86DBBCBD270658D00046A223 /* main.m */,
+				86DBBCD827065B350046A223 /* ProtoTest.swift */,
+				86DBBCD727065B350046A223 /* LibraryTest-Bridging-Header.h */,
 			);
 			path = LibraryTest;
 			sourceTree = "<group>";
 		};
+		86DBBCD527065A610046A223 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		86DBBCC4270658F90046A223 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86DBBCD1270659EE0046A223 /* ProxyController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		86DBBCB9270658D00046A223 /* LibraryTest */ = {
@@ -76,11 +132,29 @@
 			buildRules = (
 			);
 			dependencies = (
+				86DBBCD427065A5A0046A223 /* PBXTargetDependency */,
 			);
 			name = LibraryTest;
 			productName = LibraryTest;
 			productReference = 86DBBCBA270658D00046A223 /* LibraryTest */;
 			productType = "com.apple.product-type.tool";
+		};
+		86DBBCC7270658F90046A223 /* ProtocolTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86DBBCC9270658F90046A223 /* Build configuration list for PBXNativeTarget "ProtocolTest" */;
+			buildPhases = (
+				86DBBCC4270658F90046A223 /* Headers */,
+				86DBBCC5270658F90046A223 /* Sources */,
+				86DBBCC6270658F90046A223 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProtocolTest;
+			productName = ProtocolTest;
+			productReference = 86DBBCC8270658F90046A223 /* libProtocolTest.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -93,6 +167,11 @@
 				TargetAttributes = {
 					86DBBCB9270658D00046A223 = {
 						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
+					};
+					86DBBCC7270658F90046A223 = {
+						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 					};
 				};
 			};
@@ -110,6 +189,7 @@
 			projectRoot = "";
 			targets = (
 				86DBBCB9270658D00046A223 /* LibraryTest */,
+				86DBBCC7270658F90046A223 /* ProtocolTest */,
 			);
 		};
 /* End PBXProject section */
@@ -119,11 +199,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86DBBCD927065B350046A223 /* ProtoTest.swift in Sources */,
 				86DBBCBE270658D00046A223 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		86DBBCC5270658F90046A223 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86DBBCD2270659EE0046A223 /* ProxyController.m in Sources */,
+				86DBBCCE270659290046A223 /* ProtocolDefinition.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		86DBBCD427065A5A0046A223 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 86DBBCC7270658F90046A223 /* ProtocolTest */;
+			targetProxy = 86DBBCD327065A5A0046A223 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		86DBBCBF270658D00046A223 /* Debug */ = {
@@ -240,20 +338,76 @@
 		86DBBCC2270658D00046A223 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7C43638LX4;
 				ENABLE_HARDENED_RUNTIME = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LibraryTest/LibraryTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		86DBBCC3270658D00046A223 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7C43638LX4;
 				ENABLE_HARDENED_RUNTIME = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LibraryTest/LibraryTest-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		86DBBCCA270658F90046A223 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7C43638LX4;
+				EXECUTABLE_PREFIX = lib;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ProtocolTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		86DBBCCB270658F90046A223 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7C43638LX4;
+				EXECUTABLE_PREFIX = lib;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ProtocolTest-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -274,6 +428,15 @@
 			buildConfigurations = (
 				86DBBCC2270658D00046A223 /* Debug */,
 				86DBBCC3270658D00046A223 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86DBBCC9270658F90046A223 /* Build configuration list for PBXNativeTarget "ProtocolTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86DBBCCA270658F90046A223 /* Debug */,
+				86DBBCCB270658F90046A223 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
